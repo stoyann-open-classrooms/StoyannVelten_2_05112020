@@ -1,0 +1,487 @@
+ /* ================TOUTES LA PAGE=========== */
+ * {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: Raleway, sans-serif;
+ color: black;
+ }
+                 /* ================TAILLE DE LA POLICE DE BASE POUR LE SITE=========== */
+ html {
+     font-size: 16px;
+ }
+
+ a {
+      text-decoration: none;
+ }
+ ul {
+      list-style-type: none;
+ }
+ fieldset{
+      border: none
+ }
+ 
+ 
+
+ 
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MOBILE  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ navbar a{
+     display: block;
+     font-size: 1.2rem;
+     font-weight: 600;
+ }
+.logo{
+  height: 55px;
+  margin-top: 30px;
+  margin-left: 5%;
+}
+
+
+ .navbar-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    flex-wrap: wrap-reverse;
+ }
+ .hebergement-link{
+    width: 50%;
+    text-align: center;
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
+    padding-bottom: 10px;
+    position: relative;
+    transition:  0.5s;
+
+ }
+ .activity-link{
+    width: 50%;
+    text-align: center;
+    border-bottom: solid 3px #f2f2f2;
+    padding-bottom: 10px;
+    position: relative;
+    transition:  0.5s;
+}
+.suscrib-link{
+ position: relative;
+ bottom: 56px;
+ margin-right: 5%;
+ color: #0065fc;
+}
+
+.titre_container{
+    margin: 35px 60px 0 5%;
+   
+}
+.titre_principal{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.titre_secondaire{
+    font-weight: 500;
+    font-size: 1rem;
+}
+ /* Survol des liens */
+
+
+.activity-link:hover{
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
+}
+.suscrib-link:hover{
+    color: #0065fc;
+    font-weight: bolder;
+}
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.btn-recherche{
+    margin-left:  5%;
+    margin-right: 5%;
+    margin-top: 35px;
+       display: flex;
+       grid-area: btn;  
+  }
+  .pin-icone{
+       background-color: #f2f2f2;
+       height: 50px;
+       width: 50px;
+       border-radius:  17%  0% 0% 17%;
+       display: flex;
+      
+  }
+  .pin-icone i {
+           margin: auto;
+  
+  }
+  .btn-recherche__input{
+       height: 50px;
+       width: 250px;
+       font-size: 1rem;
+       font-weight: bold;
+       padding-left: 15px;
+       border: solid 1px #f2f2f2;
+  }
+  .btn-recherche__input__submit{
+       visibility: hidden;
+     
+  
+  }
+  .btn-recheche__loupe{
+       background-color: #0065fc;
+       height: 50px;
+       width: 50px;
+       border-radius:  15px;
+       display: flex;
+       align-items: center;
+       position: absolute;
+       left: 293px;
+  
+  
+  }
+  .btn-recheche__loupe i{
+       margin: auto;
+       color: #f2f2f2;
+  }
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER SECTION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* filtre */
+
+.filter-container{
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-title{
+    font-size: 1rem;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.filter-item {
+    display: flex;
+    margin: 10px;
+    position: relative;
+    top: 25px;
+    transition: 0.3s;
+
+}
+.filter-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+
+
+}
+.filter-icone{
+    background-color: #deebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    left: -5px;
+}
+.filter-icone i{
+    color: #0065fc;
+}
+.filter-item-formulaire{
+    display: flex;
+    justify-content: flex-start;
+}
+.filter-item-formulaire input{
+    height: 50px;
+    border: solid 1px #deebff;
+    border-radius: 20px;
+    padding-left: 56px;
+    font-weight: bold;
+    
+    
+}
+.eco input{
+    width: 155px;
+}
+.famille input{
+    width: 129px;
+}
+.romantique input{
+    width: 154px;
+}
+.animaux input {
+    width: 190px;
+}
+.filter-icone i{
+margin: auto;
+}
+.info-container{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    align-content: center;
+}
+.info{
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 5%;
+    font-weight: 400;
+}
+.icone-info  {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border: solid 1px #deebff;
+    border-radius: 50%;
+}
+
+.icone-info i {
+    margin: auto;
+    font-size: 0.6rem;
+    color: #0065fc;
+}
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ASIDE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ aside{
+     background-color: #f2f2f2;
+ }
+ .aside_title{
+     display: flex;
+     align-items: center;
+     margin-left: 5%;
+ }
+.cards-aside{
+background-color: white;
+max-width: 335px;
+height: auto;
+margin-left: 5%;
+margin-right: 5%;
+border-radius: 17px;
+margin-bottom: 20px;
+box-shadow: 1px 1px 15px darkgrey;
+transition: 0.3s;
+}
+.aside-thumb{
+    object-fit: cover;
+    height: 115px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 17px 17px 0px 0px;
+}
+.cards-aside:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+
+}
+.note-aside{
+    display: flex;
+}
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAIN (HEBERGEMENT) ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* cards hebergement */
+ .hebergement_cards{
+    background-color: white;
+    max-width: 335px;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px darkgrey;
+    transition: 0.3s;
+ }
+ 
+ .hebergement_body_note{
+    display: flex;
+}
+
+.hebergement-thumb{
+    object-fit: cover;
+    height: 115px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 17px 17px 0px 0px;
+}
+.hebergement_cards:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ #activity{
+    margin-top: 60px;
+     margin-left: 5%;
+ }
+.activite__cards {
+    background-color: white;
+    max-width: 335px;
+    height: auto;
+    margin-right: auto;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px darkgrey;
+    transition: 0.3s;
+}
+.activite__cards:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.activity-thumb{
+    object-fit: cover;
+    height: 115px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 17px 17px 0px 0px;
+}
+
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DESKTOP  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    @media only screen and (min-width:900px){
+       .site-content{
+           width: 100%;
+           display: grid;
+           grid-template-columns: 1fr 1fr ;
+           grid-template-areas: 
+           " header header"
+           "search search"
+           "filter filter"
+           "main aside"
+           "activity activity"
+           "footer footer"
+           ;
+       }
+       header{
+           grid-area: header;
+       }
+       .search{
+           grid-area: search;
+           margin: 0;
+       }
+       .filter{
+           grid-area: filter;
+         
+       }
+        main{
+            background-color: #f2f2f2;
+            height: auto;
+            margin-left: 10%;
+            margin-right: 5%;
+            border-radius: 17px;
+            grid-area: main;
+           
+        }
+        aside{
+            height: auto;
+            border-radius: 17px;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-area: aside;
+        
+        }
+        #activity{
+           
+           grid-area: activity;
+        }
+        footer{
+            grid-area: footer;
+        }
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+        
+        
+        .navbar-container{
+            flex-wrap: nowrap;
+            position: relative;
+            top: -109px;
+        }
+        .hebergement-link{
+            width: auto;
+            margin-left: 60px;
+            border-bottom: none;
+            border-top: solid 3px #0065fc;
+            padding-top: 40px;
+
+
+        }
+        .activity-link{
+            width: auto;
+            margin-left: 60px;
+            border-bottom: none;
+            padding-top: 40px;
+
+        }
+        .suscrib-link{
+            position: initial;
+            margin-left: 75px;
+            padding-top: 40px;
+            
+        }
+        
+        .activity-link:hover{
+            border-bottom: none;
+            border-top: solid 3px #0065fc;
+            color: #0065fc;
+        }
+        .suscrib-link:hover{
+
+            color: #0065fc;
+        }
+        .titre_container {
+       margin-top: -70px;
+    }
+     
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+        .btn-recherche__input__submit{
+            visibility: visible;
+            position: absolute;
+            height: 50px;
+            border: none;
+            border-radius: 0px 16px 16px 0px;
+            background-color:#0065fc ;
+            color: #f2f2f2;
+            font-weight: bold;
+            padding: 15px;
+        }
+        .btn-recheche__loupe{
+            visibility: hidden;
+        }
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+        .filter-container{
+            display: flex;
+        }
+        
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+       
+       .cards-activity-content{
+           display: flex;
+           flex-wrap: wrap;
+           margin-left: 5%;
+       }
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+       
+       footer{
+           padding-top: 45px;
+           padding-bottom: 50px;
+       }
+       .footer_body{
+        display: flex;
+        justify-content: space-around;
+    }
+        
+    }
+   
+   
+
