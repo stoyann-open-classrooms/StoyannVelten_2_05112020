@@ -304,16 +304,19 @@
      margin-bottom: 25px;
      justify-content: space-between;
  }
- .aside_title i{
+
+ .aside_title i {
      color: black;
      font-size: 1.3rem;
      margin-right: 20px;
  }
-.cards-aside-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
+ .cards-aside-content {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
  .cards-aside {
      display: flex;
      background-color: white;
@@ -384,7 +387,8 @@
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAIN (HEBERGEMENT) ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
- .hebergement_title{
+
+ .hebergement_title {
      margin-top: 40px;
      margin-bottom: 20px;
      margin-left: 5%;
@@ -419,15 +423,24 @@
      transform: scale(1.05);
      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
  }
- .moore{
+
+ .moore {
      font-weight: bold;
      margin-left: 30px;
      margin-bottom: 25px;
  }
+.moore:hover{
+    color: #0065fc;
+}
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  #activity {
      margin-top: 60px;
+
+ }
+
+ .activite__title {
      margin-left: 5%;
+     margin-bottom: 30px;
  }
 
  .activite__cards {
@@ -458,41 +471,46 @@
      width: 100%;
      background-color: #f2f2f2;
  }
-
+.list-element{
+    margin-top: 30px;
+}
+ .list-element a:hover {
+     color: #0065fc;
+     font-weight: bold;
+ }
 
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DESKTOP  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
  @media only screen and (min-width: 900px) {
-     .site-content {
-         width: 100%;
-         display: grid;
-         grid-template-columns: 1fr 450px;
-         grid-template-areas:
-             "  header header"
-             " search search"
-             " filter filter"
-             " main  aside "
-             "activity  activity "
-             " footer footer"
-         ;
-     }
+        .site-content {
+             width: 100%;
+             display: grid;
+             grid-template-columns: 1fr 450px;
+             grid-template-areas:
+                 "  header header"
+                 " search search"
+                 " filter filter"
+                 " main  aside "
+                 "activity  activity "
+                 " footer footer"
+             ;
+        }
 
-     header {
-         grid-area: header;
-     }
+         header {
+             grid-area: header;
+        }
 
      .search {
          grid-area: search;
          margin: 0;
-     }
+    }
 
-     .filter {
+    .filter {
          grid-area: filter;
+    }
 
-     }
-
-     main {
+    main {
          background-color: #f2f2f2;
          height: auto;
          margin-right: 5%;
@@ -500,8 +518,7 @@
          border-radius: 17px;
          grid-area: main;
          width: 95%;
-
-     }
+    }
 
      aside {
          height: auto;
@@ -515,7 +532,6 @@
      }
 
      #activity {
-
          grid-area: activity;
      }
 
@@ -595,16 +611,17 @@
      .btn-recheche__loupe {
          visibility: hidden;
      }
-     .hebergement-cards-content{
+
+     .hebergement-cards-content {
          display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
      }
 
      .hebergement_cards {
          max-width: 245px;
      }
 
-    
+
      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
      .filter-container {
