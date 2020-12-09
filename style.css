@@ -494,6 +494,7 @@
 
  .list-element {
      margin-top: 30px;
+     margin-bottom: 30px;
  }
 
  .list-element a:hover {
