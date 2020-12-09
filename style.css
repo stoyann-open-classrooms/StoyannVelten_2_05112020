@@ -475,10 +475,16 @@
      padding: 5px;
      border-radius: 17px 17px 0px 0px;
  }
+.footer_body{
+    margin-left: 3.5%;
 
+
+}
  footer {
      width: 100%;
      background-color: #f2f2f2;
+     padding: 30px;
+    
  }
 .list-element{
     margin-top: 30px;
