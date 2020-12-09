@@ -127,6 +127,7 @@
      width: 50px;
      border-radius: 17% 0% 0% 17%;
      display: flex;
+     font-size: large;
 
  }
 
@@ -192,6 +193,9 @@
      top: 25px;
      transition: 0.3s;
 
+ }
+ .filter-item i{
+     font-size: medium;
  }
 
 .filter-input:hover {
@@ -403,8 +407,8 @@
      background-color: white;
      max-width: 335px;
      height: auto;
-     margin-left: 5%;
-     margin-right: 5%;
+     margin-left: auto;
+     margin-right: auto;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px darkgrey;
@@ -452,6 +456,7 @@
      max-width: 335px;
      height: auto;
      margin-right: auto;
+     margin-left: auto;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px darkgrey;
