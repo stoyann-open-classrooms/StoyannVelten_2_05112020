@@ -308,10 +308,12 @@
  .aside_title {
      display: flex;
      align-items: center;
-     margin-left: 5%;
-     margin-top: 45px;
+     margin-left: 6%;
      margin-bottom: 25px;
      justify-content: space-between;
+ }
+ .aside_title h2{
+     margin-top: 30px;
  }
 
  .aside_title i {
@@ -400,7 +402,7 @@
  .hebergement_title {
      margin-top: 40px;
      margin-bottom: 20px;
-     margin-left: 5%;
+     margin-left: 6%;
  }
 
  /* cards hebergement */
@@ -450,7 +452,7 @@
  }
 
  .activite__title {
-     margin-left: 5%;
+     margin-left: 6%;
      margin-bottom: 30px;
  }
 
@@ -458,8 +460,6 @@
      background-color: white;
      max-width: 335px;
      height: auto;
-     margin-right: auto;
-     margin-left: auto;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px darkgrey;
@@ -475,7 +475,6 @@
      object-fit: cover;
      height: 136px;
      width: 100%;
-     padding: 5px;
      border-radius: 17px 17px 0px 0px;
  }
 
@@ -654,11 +653,56 @@
              /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
          
              .cards-activity-content {
-                 display: flex;
-                 flex-wrap: wrap;
-                 margin-left: 5%;
+                 display: grid;
+                grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
+                grid-template-rows: 2fr;
+            
              }
-         
+             .port{
+                 grid-column-start: 2;
+                 grid-column-end: 3;
+                 grid-row-start: 1 ;
+                 grid-row-end: 4;
+             }
+             .port img{
+                 height: 305px;
+             }
+             .fort{
+                grid-column-start: 4;
+                grid-column-end: 5;
+
+                grid-row-start: 1;
+                grid-row-end: 2;
+                 
+             }
+             .frioul{
+                 grid-column-start: 4;
+                 grid-column-end: 5;
+                 grid-row-start: 2;
+                 grid-row-end: 4;
+
+             }
+             .calanques{
+                grid-column-start: 6;
+                grid-column-end: 7;
+                grid-row-start: 1;
+                grid-row-end: 4;
+             }
+             .calanques img{
+                 height: 305px;
+             }
+             .dame{
+                grid-column-start: 8;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 2;
+             }
+             .parc{
+                grid-column-start: 8;
+                grid-column-end: 9;
+                grid-row-start: 2;
+                grid-row-end: 3;
+             }
              /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
          
              footer {
