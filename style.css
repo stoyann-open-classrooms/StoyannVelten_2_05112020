@@ -36,7 +36,7 @@
  navbar a {
      display: block;
      font-size: 1.2rem;
-     font-weight: 600;
+     font-weight: 500;
  }
 
  .logo {
@@ -199,6 +199,8 @@
      font-size: medium;
  }
 
+
+
  .filter-input:hover {
      transform: scale(1.05);
      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
@@ -235,8 +237,6 @@
      border-radius: 20px;
      padding-left: 56px;
      font-weight: bold;
-
-
  }
 
  .eco input {
@@ -312,7 +312,8 @@
      margin-bottom: 25px;
      justify-content: space-between;
  }
- .aside_title h2{
+
+ .aside_title h2 {
      margin-top: 30px;
  }
 
@@ -332,7 +333,6 @@
      display: flex;
      background-color: white;
      max-width: 335px;
-     height: auto;
      margin-left: 5%;
      margin-right: 5%;
      border-radius: 17px;
@@ -374,10 +374,6 @@
      top: 70px;
  }
 
-
-
-
-
  .aside-thumb {
      object-fit: cover;
      height: 115px;
@@ -414,7 +410,7 @@
      margin-right: auto;
      border-radius: 17px;
      margin-bottom: 20px;
-     box-shadow: 1px 1px 15px darkgrey;
+     box-shadow: 1px 1px 15px rgb(111, 111, 111);
      transition: 0.3s;
  }
 
@@ -460,6 +456,8 @@
      background-color: white;
      max-width: 335px;
      height: auto;
+     margin-left: auto;
+     margin-right: auto;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px darkgrey;
@@ -504,215 +502,234 @@
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DESKTOP  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-     @media only screen and (min-width: 900px) {
-             .site-content {
-                 width: 100%;
-                 display: grid;
-                 grid-template-columns: 1fr 450px;
-                 grid-template-areas:
-                     "  header header"
-                     " search search"
-                     " filter filter"
-                     " main  aside "
-                     "activity  activity "
-                     " footer footer"
-                 ;
-             }
-         
-             header {
-                 grid-area: header;
-             }
-         
-             .search {
-                 grid-area: search;
-                 margin: 0;
-             }
-         
-             .filter {
-                 grid-area: filter;
-             }
-         
-             main {
-                 background-color: #f2f2f2;
-                 height: auto;
-                 margin-right: 5%;
-                 margin-left: 5%;
-                 border-radius: 17px;
-                 grid-area: main;
-                 width: 95%;
-             }
-         
-             aside {
-                 height: auto;
-                 border-radius: 17px;
-                 grid-area: aside;
-                 max-width: 340px;
-                 margin-left: 40px;
-                 margin-right: 5%;
-            
-            
-             }
-         
-             #activity {
-                 grid-area: activity;
-             }
-         
-         
-         
-         
-             footer {
-                 grid-area: footer;
-                 width: 100%;
-             }
-         
-             /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-         
-         
-             .navbar-container {
-                 flex-wrap: nowrap;
-                 position: relative;
-                 top: -109px;
-            
-             }
-         
-             .hebergement-link {
-                 width: auto;
-                 margin-left: 60px;
-                 border-bottom: none;
-                 border-top: solid 3px #0065fc;
-                 padding-top: 40px;
-            
-            
-             }
-         
-             .activity-link {
-                 width: auto;
-                 margin-left: 60px;
-                 border-bottom: none;
-                 padding-top: 40px;
-            
-             }
-         
-             .suscrib-link {
-                 position: initial;
-                 margin-left: 75px;
-                 padding-top: 40px;
-            
-             }
-         
-             .activity-link:hover {
-                 border-bottom: none;
-                 border-top: solid 3px #0065fc;
-                 color: #0065fc;
-             }
-         
-             .suscrib-link:hover {
-            
-                 color: #0065fc;
-             }
-         
-             .titre_container {
-                 margin-top: -70px;
-             }
-         
-             /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-         
-         
-             .btn-recherche__input__submit {
-                 visibility: visible;
-                 position: absolute;
-                 height: 50px;
-                 border: none;
-                 border-radius: 0px 16px 16px 0px;
-                 background-color: #0065fc;
-                 color: #f2f2f2;
-                 font-weight: bold;
-                 padding: 15px;
-             }
-         
-             .btn-recheche__loupe {
-                 visibility: hidden;
-             }
-         
-             .hebergement-cards-content {
-                 display: grid;
-                 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-             }
-         
-             .hebergement_cards {
-                 max-width: 245px;
-             }
-         
-         
-             /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-         
-             .filter-container {
-                 display: flex;
-             }
-         
-             /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-         
-             .cards-activity-content {
-                 display: grid;
-                grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
-                grid-template-rows: 2fr;
-            
-             }
-             .port{
-                 grid-column-start: 2;
-                 grid-column-end: 3;
-                 grid-row-start: 1 ;
-                 grid-row-end: 4;
-             }
-             .port img{
-                 height: 305px;
-             }
-             .fort{
-                grid-column-start: 4;
-                grid-column-end: 5;
+ @media only screen and (min-width: 900px) {
+     .site-content {
+         width: 100%;
+         display: grid;
+         grid-template-columns: 3.5% 60% 40px 30% 3.5%;
+         grid-template-areas:
+             "  header header header header header"
+             " search search search search search"
+             " filter  filter filter filter filter"
+             "  . main .  aside . "
+             ". activity  activity activity . "
+             " footer footer footer footer footer"
+         ;
+     }
 
-                grid-row-start: 1;
-                grid-row-end: 2;
-                 
-             }
-             .frioul{
-                 grid-column-start: 4;
-                 grid-column-end: 5;
-                 grid-row-start: 2;
-                 grid-row-end: 4;
+     header {
+         grid-area: header;
+     }
 
-             }
-             .calanques{
-                grid-column-start: 6;
-                grid-column-end: 7;
-                grid-row-start: 1;
-                grid-row-end: 4;
-             }
-             .calanques img{
-                 height: 305px;
-             }
-             .dame{
-                grid-column-start: 8;
-                grid-column-end: 9;
-                grid-row-start: 1;
-                grid-row-end: 2;
-             }
-             .parc{
-                grid-column-start: 8;
-                grid-column-end: 9;
-                grid-row-start: 2;
-                grid-row-end: 3;
-             }
-             /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-         
-             footer {
-                 padding-top: 45px;
-                 padding-bottom: 50px;
-             }
-         
-             .footer_body {
-                 display: flex;
-                 justify-content: space-around;
-             }
-         
-         }
+     .search {
+         grid-area: search;
+         margin: 0;
+     }
+
+     .filter {
+         grid-area: filter;
+     }
+
+     main {
+         background-color: #f2f2f2;
+         height: auto;
+         border-radius: 17px;
+         grid-area: main;
+         width: 95%;
+     }
+
+     aside {
+         height: auto;
+         border-radius: 17px;
+         grid-area: aside;
+         max-width: 340px;
+         margin-left: 40px;
+         margin-right: 5%;
+
+
+     }
+
+     #activity {
+         grid-area: activity;
+
+     }
+
+
+
+
+     footer {
+         grid-area: footer;
+         width: 100%;
+     }
+
+     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+     .navbar-container {
+         flex-wrap: nowrap;
+         position: relative;
+         top: -109px;
+
+     }
+
+     .hebergement-link {
+         width: auto;
+         margin-left: 60px;
+         border-bottom: none;
+         border-top: solid 3px #0065fc;
+         padding-top: 40px;
+
+
+     }
+
+     .activity-link {
+         width: auto;
+         margin-left: 60px;
+         border-bottom: none;
+         padding-top: 40px;
+
+     }
+
+     .suscrib-link {
+         position: initial;
+         margin-left: 75px;
+         padding-top: 40px;
+
+     }
+
+     .activity-link:hover {
+         border-bottom: none;
+         border-top: solid 3px #0065fc;
+         color: #0065fc;
+     }
+
+     .suscrib-link:hover {
+
+         color: #0065fc;
+     }
+
+     .titre_container {
+         margin-top: -70px;
+     }
+
+     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+     .btn-recherche__input__submit {
+         visibility: visible;
+         position: absolute;
+         height: 50px;
+         border: none;
+         border-radius: 0px 16px 16px 0px;
+         background-color: #0065fc;
+         color: #f2f2f2;
+         font-weight: bold;
+         padding: 15px;
+     }
+
+     .btn-recheche__loupe {
+         visibility: hidden;
+     }
+
+     .hebergement-cards-content {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     }
+
+     .hebergement_cards {
+         max-width: 245px;
+     }
+
+     .moore {
+         padding-bottom: 20px;
+     }
+
+     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+     .filter-container {
+         display: flex;
+     }
+
+     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+     .cards-activity-content {
+         display: grid;
+         grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
+         grid-template-rows: 2fr;
+
+     }
+
+     .port {
+         grid-column-start: 2;
+         grid-column-end: 3;
+         grid-row-start: 1;
+         grid-row-end: 4;
+     }
+
+     .port img {
+         height: 305px;
+     }
+
+     .fort {
+         grid-column-start: 4;
+         grid-column-end: 5;
+
+         grid-row-start: 1;
+         grid-row-end: 2;
+
+     }
+
+     .frioul {
+         grid-column-start: 4;
+         grid-column-end: 5;
+         grid-row-start: 2;
+         grid-row-end: 4;
+
+
+     }
+
+     .calanques {
+         grid-column-start: 6;
+         grid-column-end: 7;
+         grid-row-start: 1;
+         grid-row-end: 4;
+     }
+
+     .calanques img {
+         height: 305px;
+     }
+
+     .dame {
+         grid-column-start: 8;
+         grid-column-end: 9;
+         grid-row-start: 1;
+         grid-row-end: 2;
+     }
+
+     .parc {
+         grid-column-start: 8;
+         grid-column-end: 9;
+         grid-row-start: 2;
+         grid-row-end: 3;
+     }
+
+
+
+     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+     footer {
+         padding-top: 45px;
+         padding-bottom: 50px;
+     }
+
+     .footer_body {
+         display: flex;
+
+     }
+
+     .listb,
+     .listc {
+         margin-left: 150px;
+     }
+
+ }
