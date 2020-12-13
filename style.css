@@ -76,6 +76,7 @@
  }
 
  .suscrib-link {
+     font-weight: 700;
      position: relative;
      bottom: 56px;
      margin-right: 5%;
@@ -144,6 +145,7 @@
      font-weight: bold;
      padding-left: 15px;
      border: solid 1px #f2f2f2;
+     outline: none;
  }
 
  .btn-recherche__input__submit {
@@ -177,13 +179,15 @@
      margin-left: 5%;
      display: flex;
      flex-wrap: wrap;
+     align-items: center;
  }
 
  .filter-title {
+      width: 100%;
      font-size: 1rem;
-     position: absolute;
      margin-left: 5%;
      margin-top: 10px;
+     
  }
 
  .filter-item {
@@ -331,6 +335,8 @@
 
  .cards-aside {
      display: flex;
+    
+     justify-content: center;
      background-color: white;
      max-width: 335px;
      margin-left: 5%;
@@ -396,9 +402,9 @@
 
 
  .hebergement_title {
-     margin-top: 40px;
-     margin-bottom: 20px;
-     margin-left: 6%;
+     margin-top: 6px;
+         margin-bottom: 25px;
+         margin-left: 4%;
  }
 
  /* cards hebergement */
@@ -435,6 +441,7 @@
      font-weight: bold;
      margin-left: 30px;
      margin-bottom: 25px;
+     transition: color 0.5s;
  }
 
  .moore:hover {
@@ -493,9 +500,13 @@
      margin-top: 30px;
      margin-bottom: 30px;
  }
+ .list-element a {
+     transition: color 0.5s;
+ }
 
  .list-element a:hover {
      color: #0065fc;
+   
 
  }
 
@@ -525,9 +536,19 @@
          grid-area: search;
          margin: 0;
      }
+    
+    
+    
+    
 
      .filter {
          grid-area: filter;
+     }
+     .filter-title{
+        width: unset;
+         margin: 0;
+         padding-top: 50px;
+         margin-right: 40px;         
      }
 
      main {
@@ -535,22 +556,26 @@
          height: auto;
          border-radius: 17px;
          grid-area: main;
-         width: 95%;
+         width: 100%;
+         padding: 20px;
+         margin-left: 15px;
      }
 
      aside {
          height: auto;
          border-radius: 17px;
          grid-area: aside;
-         max-width: 340px;
-         margin-left: 40px;
-         margin-right: 5%;
+         max-width: 400px;
+
 
 
      }
+    
+    
 
      #activity {
          grid-area: activity;
+       
 
      }
 
@@ -631,10 +656,14 @@
          visibility: hidden;
      }
 
-     .hebergement-cards-content {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-     }
+     
+    
+    
+    
+    
+    
+    
+    
 
      .hebergement_cards {
          max-width: 245px;
@@ -654,25 +683,26 @@
 
      .cards-activity-content {
          display: grid;
-         grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
+         grid-template-columns:  22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5% ;
          grid-template-rows: 2fr;
 
      }
 
      .port {
-         grid-column-start: 2;
-         grid-column-end: 3;
+         grid-column-start: 1;
+         grid-column-end: 2;
          grid-row-start: 1;
          grid-row-end: 4;
      }
 
      .port img {
          height: 305px;
+        
      }
 
      .fort {
-         grid-column-start: 4;
-         grid-column-end: 5;
+         grid-column-start: 3;
+         grid-column-end: 4;
 
          grid-row-start: 1;
          grid-row-end: 2;
@@ -680,17 +710,20 @@
      }
 
      .frioul {
-         grid-column-start: 4;
-         grid-column-end: 5;
+         grid-column-start: 3;
+         grid-column-end: 4;
          grid-row-start: 2;
          grid-row-end: 4;
 
 
      }
+     
+     
+     
 
      .calanques {
-         grid-column-start: 6;
-         grid-column-end: 7;
+         grid-column-start: 5;
+         grid-column-end: 6;
          grid-row-start: 1;
          grid-row-end: 4;
      }
@@ -700,15 +733,15 @@
      }
 
      .dame {
-         grid-column-start: 8;
-         grid-column-end: 9;
+         grid-column-start: 7;
+         grid-column-end: 8;
          grid-row-start: 1;
          grid-row-end: 2;
      }
 
      .parc {
-         grid-column-start: 8;
-         grid-column-end: 9;
+         grid-column-start: 7;
+         grid-column-end: 8;
          grid-row-start: 2;
          grid-row-end: 3;
      }
