@@ -185,7 +185,6 @@
  .filter-title {
       width: 100%;
      font-size: 1rem;
-     /* margin-left: 5%; */
      margin-top: 30px;
      
  }
@@ -315,16 +314,19 @@
      margin-left: 6%;
      margin-bottom: 25px;
      justify-content: space-between;
+ 
  }
 
  .aside_title h2 {
      margin-top: 30px;
+    
  }
 
  .aside_title i {
      color: black;
      font-size: 1.3rem;
-     margin-right: 20px;
+     padding-right: 20px;
+     margin-top: 33px;
  }
 
  .cards-aside-content {
@@ -484,7 +486,7 @@
  }
 
  .footer_body {
-     margin-left: 5%;
+     margin-left: 3%;
 
 
  }
@@ -517,7 +519,7 @@
      .site-content {
          width: 100%;
          display: grid;
-         grid-template-columns: 3.5% 60% 40px 30% 3.5%;
+         grid-template-columns: 3.5% 60% 30px 33% 3.5%;
          grid-template-areas:
              "  header header header header header"
              " search search search search search"
@@ -570,6 +572,11 @@
 
 
      }
+     
+     .cards-aside{
+         min-width: 290px;
+     }
+     
     
     
 
@@ -747,7 +754,13 @@
      }
 
 
+  
+  
+  
+  
 
+  
+     
      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
      footer {
