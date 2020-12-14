@@ -183,10 +183,11 @@
  }
 
  .filter-title {
-      width: 100%;
+     width: 100%;
      font-size: 1rem;
      margin-top: 30px;
-     
+     margin-left: 5px;
+
  }
 
  .filter-item {
@@ -202,7 +203,10 @@
      font-size: medium;
  }
 
+ .filter-input {
+     transition: all 0.5s;
 
+ }
 
  .filter-input:hover {
      transform: scale(1.05);
@@ -211,6 +215,9 @@
      color: #deebff;
 
  }
+
+
+
 
  .filter-icone {
      background-color: #deebff;
@@ -314,12 +321,12 @@
      margin-left: 6%;
      margin-bottom: 25px;
      justify-content: space-between;
- 
+
  }
 
  .aside_title h2 {
      margin-top: 30px;
-    
+
  }
 
  .aside_title i {
@@ -337,10 +344,10 @@
 
  .cards-aside {
      display: flex;
-    
+
      justify-content: center;
      background-color: white;
-     max-width: 335px;
+     max-width: 333px;
      margin-left: 5%;
      margin-right: 5%;
      border-radius: 17px;
@@ -387,7 +394,7 @@
      height: 115px;
      width: 128px;
      padding: 5px;
-     border-radius: 17px 17px 0px 0px;
+     border-radius: 17px 0px 0px 17px;
  }
 
  .cards-aside:hover {
@@ -404,9 +411,19 @@
 
 
  .hebergement_title {
-     margin-top: 6px;
-         margin-bottom: 25px;
-         margin-left: 4%;
+     margin-top: 20px;
+     margin-bottom: 25px;
+     margin-left: 7%;
+
+ }
+
+ .hebergement-cards-content {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+
+
  }
 
  /* cards hebergement */
@@ -414,8 +431,7 @@
      background-color: white;
      max-width: 335px;
      height: auto;
-     margin-left: auto;
-     margin-right: auto;
+     margin: 10px;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px rgb(111, 111, 111);
@@ -424,6 +440,7 @@
 
  .hebergement_body_note {
      display: flex;
+     padding-bottom: 5px;
  }
 
  .hebergement-thumb {
@@ -502,16 +519,32 @@
      margin-top: 30px;
      margin-bottom: 30px;
  }
+
  .list-element a {
      transition: color 0.5s;
  }
 
  .list-element a:hover {
      color: #0065fc;
-   
+
 
  }
 
+ @media only screen and (min-width: 768px) {
+     .cards-activity-content {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+
+         margin-left: 1.5%;
+         margin-right: 0.5%;
+     }
+
+
+
+
+
+ }
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DESKTOP  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -519,7 +552,7 @@
      .site-content {
          width: 100%;
          display: grid;
-         grid-template-columns: 3.5% 60% 30px 33% 3.5%;
+         grid-template-columns: 1fr 60% 30px 33% 1fr;
          grid-template-areas:
              "  header header header header header"
              " search search search search search"
@@ -538,19 +571,20 @@
          grid-area: search;
          margin: 0;
      }
-    
-    
-    
-    
+
+
+
+
 
      .filter {
          grid-area: filter;
      }
-     .filter-title{
-        width: unset;
+
+     .filter-title {
+         width: unset;
          margin: 0;
          padding-top: 50px;
-         margin-right: 40px;         
+         margin-right: 40px;
      }
 
      main {
@@ -572,17 +606,17 @@
 
 
      }
-     
-     .cards-aside{
+
+     .cards-aside {
          min-width: 290px;
      }
-     
-    
-    
+
+
+
 
      #activity {
          grid-area: activity;
-       
+
 
      }
 
@@ -663,14 +697,7 @@
          visibility: hidden;
      }
 
-     
-    
-    
-    
-    
-    
-    
-    
+
 
      .hebergement_cards {
          max-width: 245px;
@@ -690,7 +717,7 @@
 
      .cards-activity-content {
          display: grid;
-         grid-template-columns:  22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5% ;
+         grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
          grid-template-rows: 2fr;
 
      }
@@ -704,7 +731,7 @@
 
      .port img {
          height: 305px;
-        
+
      }
 
      .fort {
@@ -724,9 +751,11 @@
 
 
      }
-     
-     
-     
+
+
+
+
+
 
      .calanques {
          grid-column-start: 5;
@@ -754,13 +783,13 @@
      }
 
 
-  
-  
-  
-  
 
-  
-     
+
+
+
+
+
+
      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
      footer {
