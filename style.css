@@ -449,7 +449,6 @@
  }
 
  footer {
-
      background-color: #f2f2f2;
      padding: 30px;
  }
@@ -664,11 +663,13 @@
          footer {
              grid-area: footer;
              width: 100%;
+             margin-top: 50px;
              padding: 45px 0 50px 0;
          }
 
          .footer_body {
              display: flex;
+             margin-left: 5%;
          }
 
          .listb,
