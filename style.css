@@ -32,8 +32,8 @@
  }
 
  .logo {
-     height: 55px;
-     margin: 30px 0 0 5%;
+     height: 80px;
+     margin: 20px 0 20px 5%;
  }
 
  .navbar-container {
@@ -41,7 +41,7 @@
      justify-content: flex-end;
      width: 100%;
      position: relative;
-     margin-top: 20px;
+     margin-top: -15px;
      flex-wrap: wrap-reverse;
  }
 
@@ -73,7 +73,7 @@
  }
 
  .titre_container {
-     margin: 35px 60px 0 5%;
+     margin: 30px 60px 0 5%;
  }
 
  .titre_principal {
@@ -491,7 +491,9 @@
          header {
              grid-area: header;
          }
-
+         .titre_container{
+             margin: 0 0 0 5%;
+         }
          .navbar-container {
              flex-wrap: nowrap;
              position: relative;
@@ -535,7 +537,8 @@
          /* +++ SEARCH BAR ++++ */
          .search {
              grid-area: search;
-             margin: 0;
+             margin-top: 20px ;
+             margin-bottom: 20px;
          }
 
          .btn-recherche__input__submit {
