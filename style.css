@@ -375,7 +375,6 @@
  .hebergement_cards {
      background-color: white;
      max-width: 335px;
-     height: auto;
      border-radius: 17px;
      margin-bottom: 30px;
      box-shadow: 1px 1px 15px rgb(111, 111, 111);
@@ -478,7 +477,7 @@
 
 
      /* +++ VERSION DESKTOP ++++ */
-     @media only screen and (min-width: 1170px) {
+     @media only screen and (min-width: 992px) {
          .site-content {
              width: 100%;
              display: grid;
@@ -593,6 +592,7 @@
              grid-template: repeat(2, 1fr) / repeat(3, 1fr) ;
              grid-column-gap: 20px;
              grid-row-gap: 20px;
+             justify-items: center;
          }
 
          .hebergement_cards {
