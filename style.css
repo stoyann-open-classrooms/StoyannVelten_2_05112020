@@ -22,6 +22,10 @@
  fieldset {
      border: none
  }
+ .site-content{
+     max-width: 1800px;
+     margin: auto;
+ }
 
  /* +++ MOBILE  ++++ */
  /* +++ HEADER  ++++ */
