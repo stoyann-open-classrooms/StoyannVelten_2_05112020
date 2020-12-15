@@ -56,7 +56,7 @@
      color: #0065fc;
      padding-bottom: 10px;
      position: relative;
-     transition: 0.5s;
+     transition:  color 0.5s;
  }
 
  .activity-link {
@@ -65,7 +65,7 @@
      border-bottom: solid 3px #f2f2f2;
      padding-bottom: 10px;
      position: relative;
-     transition: 0.5s;
+     transition: color 0.5s;
  }
 
  .suscrib-link {
