@@ -23,8 +23,7 @@
      border: none
  }
  .site-content{
-
-     /* max-width: 1800px; */
+     max-width: 1800px;
      margin: auto;
  }
 
@@ -688,8 +687,8 @@
              display: grid;
              grid-template-columns: repeat(3, 1fr);
          }
-         footer{
-            width: 100vh;
-         }
+        
+        
+        
 
      }
