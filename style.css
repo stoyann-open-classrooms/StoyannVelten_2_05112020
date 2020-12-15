@@ -6,40 +6,29 @@
      font-family: Raleway, sans-serif;
      color: black;
  }
-
- /* ================TAILLE DE LA POLICE DE BASE POUR LE SITE=========== */
  html {
      font-size: 16px;
  }
-
  a {
      text-decoration: none;
  }
-
  ul {
      list-style-type: none;
  }
-
  fieldset {
      border: none
  }
-
  /* +++ MOBILE  ++++ */
-
-
  /* +++ HEADER  ++++ */
-
  navbar a {
      display: block;
      font-size: 1.2rem;
      font-weight: 500;
  }
-
  .logo {
      height: 55px;
      margin: 30px 0 0 5%;
  }
-
  .navbar-container {
      display: flex;
      justify-content: flex-end;
@@ -48,7 +37,6 @@
      margin-top: 20px;
      flex-wrap: wrap-reverse;
  }
-
  .hebergement-link {
      width: 50%;
      text-align: center;
@@ -58,7 +46,6 @@
      position: relative;
      transition: 0.5s;
  }
-
  .activity-link {
      width: 50%;
      text-align: center;
@@ -67,7 +54,6 @@
      position: relative;
      transition: 0.5s;
  }
-
  .suscrib-link {
      font-weight: 700;
      position: relative;
@@ -75,38 +61,26 @@
      margin-right: 5%;
      color: #0065fc;
  }
-
  .titre_container {
      margin: 35px 60px 0 5%;
-
  }
-
  .titre_principal {
      font-size: 1.3rem;
      margin-bottom: 10px;
  }
-
  .titre_secondaire {
      font-weight: 500;
      font-size: 1rem;
  }
-
- /* Survol des liens */
-
-
  .activity-link:hover {
      border-bottom: solid 3px #0065fc;
      color: #0065fc;
  }
-
  .suscrib-link:hover {
      color: #0065fc;
      font-weight: bolder;
  }
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
+ /* +++ RECHERCHE  ++++ */
  .btn-recherche {
      margin-left: 5%;
      margin-right: 5%;
@@ -114,24 +88,18 @@
      display: flex;
      grid-area: btn;
  }
-
  .pin-icone {
      background-color: #f2f2f2;
      height: 50px;
      width: 50px;
      border-radius: 17% 0% 0% 17%;
      display: flex;
-
-
  }
-
  .pin-icone i {
      margin: auto;
      color: black;
      font-size: large;
-
  }
-
  .btn-recherche__input {
      height: 50px;
      width: 250px;
@@ -141,17 +109,9 @@
      border: solid 1px #f2f2f2;
      outline: none;
  }
-
-
-
-
-
  .btn-recherche__input__submit {
      visibility: hidden;
-
-
  }
-
  .btn-recheche__loupe {
      background-color: #0065fc;
      height: 50px;
@@ -161,8 +121,6 @@
      align-items: center;
      position: absolute;
      left: 293px;
-
-
  }
 
  .btn-recheche__loupe i {
@@ -170,53 +128,38 @@
      color: #f2f2f2;
  }
 
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER SECTION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
- /* filtre */
-
+ /* +++ FILTER ++++ */
  .filter-container {
      margin-left: 5%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
  }
-
  .filter-title {
      width: 100%;
      font-size: 1rem;
      margin-top: 30px;
      margin-left: 5px;
-
  }
-
  .filter-item {
      display: flex;
      margin: 10px;
      position: relative;
      top: 25px;
      transition: 0.3s;
-
  }
-
  .filter-item i {
      font-size: medium;
  }
-
  .filter-input {
      transition: all 0.5s;
-
  }
-
  .filter-input:hover {
      transform: scale(1.05);
      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
      background-color: #0065fc;
      color: #deebff;
-
  }
-
-
-
-
  .filter-icone {
      background-color: #deebff;
      height: 55px;
@@ -226,19 +169,17 @@
      position: absolute;
      left: -7px;
      top: -2px;
-
      z-index: 1;
  }
-
- .filter-icone i {
+ .filter-icone i,
+ .icone-info i {
      color: #0065fc;
+     margin: auto;
  }
-
  .filter-item-formulaire {
      display: flex;
      justify-content: flex-start;
  }
-
  .filter-item-formulaire input {
      height: 50px;
      border: solid 1px #deebff;
@@ -246,39 +187,28 @@
      padding-left: 56px;
      font-weight: bold;
  }
-
  .eco input {
      width: 155px;
  }
-
  .famille input {
      width: 129px;
  }
-
  .romantique input {
      width: 154px;
  }
-
  .animaux input {
      width: 190px;
  }
-
- .filter-icone i {
-     margin: auto;
- }
-
  .info-container {
      display: flex;
      margin: 60px 0 40px 5%;
      align-items: center;
  }
-
  .info {
      font-size: 1rem;
      padding-left: 15px;
      font-weight: 300;
  }
-
  .icone-info {
      display: flex;
      height: 25px;
@@ -286,33 +216,41 @@
      border: solid 1px #deebff;
      border-radius: 50%;
  }
-
- .icone-info i {
-     margin: auto;
-     font-size: 0.6rem;
-     color: #0065fc;
+ /* +++ TITRES DES CARDS ++++ */
+ .title-cards-aside,
+ .hebergement_body_title,
+ .body-activity {
+     font-size: 1rem;
  }
-
- /* taille et couleurde bases notes cards */
+ /* +++ PRIX DES CARDS ++++ */
+ .prix-aside,
+ .hebergement_body_price {
+     font-size: 0.8rem;
+     font-weight: 400;
+ }
+ /* +++ NOTES DES CARDS ++++ */
  .fas {
      font-size: 0.7rem;
      color: #f2f2f2;
  }
-
- .blue-star i ,
+ /* +++ HOVER DES CARDS ++++ */
+ .cards-aside:hover,
+ .hebergement_cards:hover,
+ .activite__cards:hover {
+     transform: scale(1.05);
+     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+ }
+ /* +++ HOVER DES LIENS ET COULEUR BLEU NOTES ++++ */
+ .blue-star i,
  .aside_title i:hover,
  .moore:hover,
- .list-element a:hover
-  {
+ .list-element a:hover {
      color: #0065fc;
  }
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ASIDE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+ /* +++ ASIDE ++++ */
  aside {
      background-color: #f2f2f2;
  }
-
  .aside_title {
      display: flex;
      align-items: center;
@@ -349,27 +287,10 @@
      position: relative;
      margin: 15px 15px 5px 15px;
  }
- .hebergement_body {
-     margin-left: 15px;
- }
-
- .title-cards-aside,
- .hebergement_body_title,
- .body-activity {
-     font-size: 1rem;
- }
-
- .prix-aside,
- .hebergement_body_price {
-     font-size: 0.8rem;
-     font-weight: 400;
- }
-
  .note-aside {
      position: absolute;
      top: 70px;
  }
-
  .aside-thumb {
      object-fit: cover;
      height: 115px;
@@ -377,24 +298,13 @@
      padding: 5px;
      border-radius: 17px 0px 0px 17px;
  }
-
- .cards-aside:hover,
- .hebergement_cards:hover,
- .activite__cards:hover {
-     transform: scale(1.05);
-     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
- }
  .note-aside {
      display: flex;
  }
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAIN (HEBERGEMENT) ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+ /* +++ MAIN HEBERGEMENTS ++++ */
  .hebergement_title {
      margin: 20px 0 25px 3%;
  }
-
-
  /* cards hebergement */
  .hebergement_cards {
      background-color: white;
@@ -405,12 +315,13 @@
      box-shadow: 1px 1px 15px rgb(111, 111, 111);
      transition: 0.3s;
  }
-
+ .hebergement_body {
+     margin-left: 15px;
+ }
  .hebergement_body_note {
      display: flex;
      padding-bottom: 5px;
  }
-
  .hebergement-thumb {
      object-fit: cover;
      height: 115px;
@@ -418,24 +329,20 @@
      padding: 5px;
      border-radius: 17px 17px 0px 0px;
  }
-
  .moore {
      font-weight: bold;
      margin-left: 30px;
      margin-bottom: 25px;
      transition: color 0.5s;
  }
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ /* +++ ACTIVITE ++++ */
  #activity {
      margin-top: 60px;
  }
-
  .activite__title {
      margin-left: 4%;
      margin-bottom: 30px;
  }
-
  .activite__cards {
      background-color: white;
      max-width: 335px;
@@ -447,54 +354,43 @@
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
  }
-
  .body-activity {
      margin-left: 18px;
      margin-top: 20px;
      padding-bottom: 15px;
  }
-
-
  .activity-thumb {
      object-fit: cover;
      height: 136px;
      width: 100%;
      border-radius: 17px 17px 0px 0px;
  }
-
+ /* +++ FOOTER ++++ */
  .footer_body {
      margin-left: 3%;
  }
-
  footer {
      width: 100%;
      background-color: #f2f2f2;
      padding: 30px;
-
  }
-
  .list-element {
      margin-top: 30px;
      margin-bottom: 30px;
  }
-
  .list-element a {
      transition: color 0.5s;
  }
-
+ /* +++ POUR LES TABLETTES ++++ */
  @media only screen and (min-width: 768px) {
      .cards-activity-content {
          display: flex;
          justify-content: center;
          flex-wrap: wrap;
          margin: 0 0.5% 0 1.5%;
-
      }
-
  }
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DESKTOP  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+ /* +++ VERSION DESKTOP ++++ */
  @media only screen and (min-width: 900px) {
      .site-content {
          width: 100%;
@@ -508,66 +404,15 @@
              ". activity  activity activity . "
              " footer footer footer footer footer";
      }
-
+     /* +++ HEADER++++ */
      header {
          grid-area: header;
      }
-
-     .search {
-         grid-area: search;
-         margin: 0;
-     }
-
-     .filter {
-         grid-area: filter;
-     }
-
-     .filter-title {
-         width: unset;
-         margin: 0;
-         padding-top: 50px;
-         margin-right: 40px;
-     }
-
-     main {
-         background-color: #f2f2f2;
-         height: auto;
-         border-radius: 17px;
-         grid-area: main;
-         width: 100%;
-         padding: 20px;
-         margin-left: 15px;
-     }
-
-     aside {
-         height: auto;
-         border-radius: 17px;
-         grid-area: aside;
-         margin-left: auto;
-     }
-
-     .cards-aside {
-         min-width: 290px;
-     }
-
-     #activity {
-         grid-area: activity;
-     }
-
-     footer {
-         grid-area: footer;
-         width: 100%;
-     }
-
-     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
      .navbar-container {
          flex-wrap: nowrap;
          position: relative;
          top: -109px;
      }
-
      .hebergement-link {
          width: auto;
          margin-left: 60px;
@@ -575,14 +420,12 @@
          border-top: solid 3px #0065fc;
          padding-top: 40px;
      }
-
      .activity-link {
          width: auto;
          margin-left: 60px;
          border-bottom: none;
          padding-top: 40px;
      }
-
      .suscrib-link {
          position: initial;
          margin-left: 75px;
@@ -591,27 +434,19 @@
          display: block;
          widows: 150px;
      }
-
      .suscrib-link:hover {
          border-top: solid 3px #0065fc;
      }
-
      .activity-link:hover {
          border-bottom: none;
          border-top: solid 3px #0065fc;
          color: #0065fc;
      }
-
-     .suscrib-link:hover {
-         color: #0065fc;
+     /* +++ SEARCH BAR ++++ */
+     .search {
+         grid-area: search;
+         margin: 0;
      }
-
-     .titre_container {
-         margin-top: -70px;
-     }
-
-     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
      .btn-recherche__input__submit {
          visibility: visible;
          position: absolute;
@@ -623,72 +458,89 @@
          font-weight: bold;
          padding: 15px;
      }
-
      .btn-recheche__loupe {
          visibility: hidden;
      }
-
+     /* +++ FILTER ++++ */
+     .filter {
+         grid-area: filter;
+     }
+     .filter-container {
+         display: flex;
+     }
+     .filter-title {
+         width: unset;
+         margin: 0;
+         padding-top: 50px;
+         margin-right: 40px;
+     }
+     /* +++ HEBERGEMENT++++ */
+     main {
+         background-color: #f2f2f2;
+         height: auto;
+         border-radius: 17px;
+         grid-area: main;
+         width: 100%;
+         padding: 20px;
+         margin-left: 15px;
+     }
      .hebergement_cards {
          max-width: 245px;
      }
-
      .moore {
          padding-bottom: 20px;
      }
 
-     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-     .filter-container {
-         display: flex;
+     /* +++ ASIDE ++++ */
+     aside {
+         height: auto;
+         border-radius: 17px;
+         grid-area: aside;
+         margin-left: auto;
      }
-
-     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+     .cards-aside {
+         min-width: 290px;
+     }
+     /* +++ ACTIVITE ++++ */
+     #activity {
+         grid-area: activity;
+     }
      .cards-activity-content {
          display: grid;
          grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
          grid-template-rows: 2fr;
      }
-
      .port {
          grid-area: 1/1/4/2;
      }
-
      .port img,
      .calanques img {
          height: 305px;
      }
-
      .fort {
          grid-area: 1/3/2/4;
      }
-
      .frioul {
          grid-area: 2/3/4/4;
      }
-
      .calanques {
          grid-area: 1/5/4/6;
      }
-
      .dame {
          grid-area: 1/7/2/8;
      }
-
      .parc {
          grid-area: 2/7/3/8;
      }
-
-     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+     /* +++ FOOTER++++ */
      footer {
+         grid-area: footer;
+         width: 100%;
          padding: 45px 0 50px 0;
      }
-
      .footer_body {
          display: flex;
      }
-
      .listb,
      .listc {
          margin-left: 180px;
