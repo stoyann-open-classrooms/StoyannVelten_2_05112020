@@ -369,7 +369,6 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     align-items: flex-start;
 
  }
 
@@ -479,7 +478,7 @@
 
 
      /* +++ VERSION DESKTOP ++++ */
-     @media only screen and (min-width: 900px) {
+     @media only screen and (min-width: 1170px) {
          .site-content {
              width: 100%;
              display: grid;
@@ -589,13 +588,11 @@
              margin-left: 15px;
          }
 
-         .hebergement-cards-content {
-             /* display: flex; */
-             /* flex-wrap: wrap; */
-             /* justify-content: center; */
-             /* align-items: flex-start; */
-
-
+         .hebergement-cards-content{
+             display: grid;
+             grid-template: repeat(2, 1fr) / repeat(3, 1fr) ;
+             grid-column-gap: 20px;
+             grid-row-gap: 20px;
          }
 
          .hebergement_cards {
