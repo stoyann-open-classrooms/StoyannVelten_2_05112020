@@ -507,8 +507,7 @@
          }
 
          .hebergement-link {
-             width: auto;
-             margin-left: 60px;
+            width: 150px;
              border-bottom: none;
              border-top: solid 3px #0065fc;
              padding-top: 40px;
@@ -516,18 +515,18 @@
 
          .activity-link {
              width: auto;
-             margin-left: 60px;
              border-bottom: none;
              padding-top: 40px;
+             width: 150px;
+
          }
 
          .suscrib-link {
              position: initial;
-             margin-left: 75px;
              padding-top: 40px;
              text-align: center;
              display: block;
-             widows: 150px;
+             width: 150px;
          }
 
          .suscrib-link:hover {
