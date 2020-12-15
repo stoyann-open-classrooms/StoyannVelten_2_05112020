@@ -24,12 +24,11 @@
      border: none
  }
 
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MOBILE  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ /* +++ MOBILE  ++++ */
 
 
+ /* +++ HEADER  ++++ */
 
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  navbar a {
      display: block;
      font-size: 1.2rem;
@@ -40,7 +39,6 @@
      height: 55px;
      margin: 30px 0 0 5%;
  }
-
 
  .navbar-container {
      display: flex;
@@ -59,7 +57,6 @@
      padding-bottom: 10px;
      position: relative;
      transition: 0.5s;
-
  }
 
  .activity-link {
@@ -124,13 +121,14 @@
      width: 50px;
      border-radius: 17% 0% 0% 17%;
      display: flex;
-     font-size: large;
+
 
  }
 
  .pin-icone i {
      margin: auto;
      color: black;
+     font-size: large;
 
  }
 
@@ -143,6 +141,10 @@
      border: solid 1px #f2f2f2;
      outline: none;
  }
+
+
+
+
 
  .btn-recherche__input__submit {
      visibility: hidden;
@@ -267,17 +269,14 @@
 
  .info-container {
      display: flex;
-     margin-left: 5%;
-     margin-top: 35px;
-     margin-bottom: 40px;
-     align-content: center;
+     margin: 60px 0 40px 5%;
+     align-items: center;
  }
 
  .info {
      font-size: 1rem;
-     margin-left: 10px;
-     margin-right: 5%;
-     font-weight: 400;
+     padding-left: 15px;
+     font-weight: 300;
  }
 
  .icone-info {
@@ -300,7 +299,11 @@
      color: #f2f2f2;
  }
 
- .blue-star i {
+ .blue-star i ,
+ .aside_title i:hover,
+ .moore:hover,
+ .list-element a:hover
+  {
      color: #0065fc;
  }
 
@@ -308,7 +311,6 @@
 
  aside {
      background-color: #f2f2f2;
-
  }
 
  .aside_title {
@@ -317,47 +319,36 @@
      margin-left: 6%;
      margin-bottom: 25px;
      justify-content: space-between;
-
  }
-
  .aside_title h2 {
-     margin-top: 30px;
-
+     margin-top: 40px;
  }
-
  .aside_title i {
      color: black;
      font-size: 1.3rem;
      padding-right: 20px;
-     margin-top: 33px;
+     margin-top: 43px;
+     transition: color 0.5s;
  }
-
  .cards-aside-content {
      display: flex;
      justify-content: center;
      flex-wrap: wrap;
  }
-
  .cards-aside {
      display: flex;
-
      justify-content: center;
      background-color: white;
      max-width: 333px;
-     margin-left: 5%;
-     margin-right: 5%;
+     margin: 0 5% 30px 5%;
      border-radius: 17px;
-     margin-bottom: 30px;
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
  }
-
  .cards-aside-body {
      position: relative;
      margin: 15px 15px 5px 15px;
-
  }
-
  .hebergement_body {
      margin-left: 15px;
  }
@@ -366,12 +357,6 @@
  .hebergement_body_title,
  .body-activity {
      font-size: 1rem;
- }
-
- .body-activity {
-     margin-left: 18px;
-     margin-top: 20px;
-     padding-bottom: 15px;
  }
 
  .prix-aside,
@@ -393,41 +378,28 @@
      border-radius: 17px 0px 0px 17px;
  }
 
- .cards-aside:hover {
+ .cards-aside:hover,
+ .hebergement_cards:hover,
+ .activite__cards:hover {
      transform: scale(1.05);
      box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-
  }
-
  .note-aside {
      display: flex;
  }
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAIN (HEBERGEMENT) ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-
  .hebergement_title {
-     margin-top: 20px;
-     margin-bottom: 25px;
-     margin-left: 7%;
-
+     margin: 20px 0 25px 3%;
  }
 
- .hebergement-cards-content {
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-
-
- }
 
  /* cards hebergement */
  .hebergement_cards {
      background-color: white;
      max-width: 335px;
      height: auto;
-     margin: 10px;
      border-radius: 17px;
      margin-bottom: 20px;
      box-shadow: 1px 1px 15px rgb(111, 111, 111);
@@ -447,11 +419,6 @@
      border-radius: 17px 17px 0px 0px;
  }
 
- .hebergement_cards:hover {
-     transform: scale(1.05);
-     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
- }
-
  .moore {
      font-weight: bold;
      margin-left: 30px;
@@ -459,18 +426,13 @@
      transition: color 0.5s;
  }
 
- .moore:hover {
-     color: #0065fc;
- }
-
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ACTIVITY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  #activity {
      margin-top: 60px;
-
  }
 
  .activite__title {
-     margin-left: 6%;
+     margin-left: 4%;
      margin-bottom: 30px;
  }
 
@@ -486,10 +448,12 @@
      transition: 0.3s;
  }
 
- .activite__cards:hover {
-     transform: scale(1.05);
-     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+ .body-activity {
+     margin-left: 18px;
+     margin-top: 20px;
+     padding-bottom: 15px;
  }
+
 
  .activity-thumb {
      object-fit: cover;
@@ -500,8 +464,6 @@
 
  .footer_body {
      margin-left: 3%;
-
-
  }
 
  footer {
@@ -520,25 +482,14 @@
      transition: color 0.5s;
  }
 
- .list-element a:hover {
-     color: #0065fc;
-
-
- }
-
  @media only screen and (min-width: 768px) {
      .cards-activity-content {
          display: flex;
          justify-content: center;
          flex-wrap: wrap;
+         margin: 0 0.5% 0 1.5%;
 
-         margin-left: 1.5%;
-         margin-right: 0.5%;
      }
-
-
-
-
 
  }
 
@@ -555,8 +506,7 @@
              " filter  filter filter filter filter"
              "  . main .  aside . "
              ". activity  activity activity . "
-             " footer footer footer footer footer"
-         ;
+             " footer footer footer footer footer";
      }
 
      header {
@@ -567,10 +517,6 @@
          grid-area: search;
          margin: 0;
      }
-
-
-
-
 
      .filter {
          grid-area: filter;
@@ -597,28 +543,16 @@
          height: auto;
          border-radius: 17px;
          grid-area: aside;
-         max-width: 400px;
          margin-left: auto;
-
-
-
      }
 
      .cards-aside {
          min-width: 290px;
      }
 
-
-
-
      #activity {
          grid-area: activity;
-
-
      }
-
-
-
 
      footer {
          grid-area: footer;
@@ -632,7 +566,6 @@
          flex-wrap: nowrap;
          position: relative;
          top: -109px;
-
      }
 
      .hebergement-link {
@@ -641,8 +574,6 @@
          border-bottom: none;
          border-top: solid 3px #0065fc;
          padding-top: 40px;
-
-
      }
 
      .activity-link {
@@ -650,14 +581,19 @@
          margin-left: 60px;
          border-bottom: none;
          padding-top: 40px;
-
      }
 
      .suscrib-link {
          position: initial;
          margin-left: 75px;
          padding-top: 40px;
+         text-align: center;
+         display: block;
+         widows: 150px;
+     }
 
+     .suscrib-link:hover {
+         border-top: solid 3px #0065fc;
      }
 
      .activity-link:hover {
@@ -667,7 +603,6 @@
      }
 
      .suscrib-link:hover {
-
          color: #0065fc;
      }
 
@@ -676,7 +611,6 @@
      }
 
      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH BAR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
 
      .btn-recherche__input__submit {
          visibility: visible;
@@ -693,8 +627,6 @@
      .btn-recheche__loupe {
          visibility: hidden;
      }
-
-
 
      .hebergement_cards {
          max-width: 245px;
@@ -716,92 +648,50 @@
          display: grid;
          grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
          grid-template-rows: 2fr;
-
      }
 
      .port {
-         grid-column-start: 1;
-         grid-column-end: 2;
-         grid-row-start: 1;
-         grid-row-end: 4;
+         grid-area: 1/1/4/2;
      }
 
-     .port img {
-         height: 305px;
-
-     }
-
-     .fort {
-         grid-column-start: 3;
-         grid-column-end: 4;
-
-         grid-row-start: 1;
-         grid-row-end: 2;
-
-     }
-
-     .frioul {
-         grid-column-start: 3;
-         grid-column-end: 4;
-         grid-row-start: 2;
-         grid-row-end: 4;
-
-
-     }
-
-
-
-
-
-
-     .calanques {
-         grid-column-start: 5;
-         grid-column-end: 6;
-         grid-row-start: 1;
-         grid-row-end: 4;
-     }
-
+     .port img,
      .calanques img {
          height: 305px;
      }
 
+     .fort {
+         grid-area: 1/3/2/4;
+     }
+
+     .frioul {
+         grid-area: 2/3/4/4;
+     }
+
+     .calanques {
+         grid-area: 1/5/4/6;
+     }
+
      .dame {
-         grid-column-start: 7;
-         grid-column-end: 8;
-         grid-row-start: 1;
-         grid-row-end: 2;
+         grid-area: 1/7/2/8;
      }
 
      .parc {
-         grid-column-start: 7;
-         grid-column-end: 8;
-         grid-row-start: 2;
-         grid-row-end: 3;
+         grid-area: 2/7/3/8;
      }
-
-
-
-
-
-
-
-
 
      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
      footer {
-         padding-top: 45px;
-         padding-bottom: 50px;
+         padding: 45px 0 50px 0;
      }
 
      .footer_body {
          display: flex;
-
      }
 
      .listb,
      .listc {
-         margin-left: 150px;
+         margin-left: 180px;
      }
 
  }
