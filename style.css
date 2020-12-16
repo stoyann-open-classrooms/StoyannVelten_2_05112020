@@ -196,13 +196,13 @@
 
  .filter-icone {
      background-color: #deebff;
-     height: 55px;
-     width: 55px;
+     height: 50px;
+     width: 50px;
      border-radius: 50%;
      display: flex;
      position: absolute;
      left: -7px;
-     top: -2px;
+     top: 0px;
      z-index: 1;
  }
 
@@ -368,7 +368,7 @@
  /* +++ MAIN HEBERGEMENTS ++++ */
  .hebergement_title {
      font-size: 1.3rem;
-     margin: 30px 0 30px 20px;
+     margin: 20px 0 20px 20px;
  }
 
  /* cards hebergement */
@@ -435,7 +435,7 @@
  .activite__cards {
      background-color: white;
      max-width: 345px;
-     height: auto;
+     /* height: auto; */
      border-radius: 17px;
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
@@ -474,7 +474,7 @@
  }
 
  /* +++ POUR LES TABLETTES ++++ */
- @media only screen and (min-width: 768px) {
+ @media only screen and (min-width: 720px) {
      .cards-activity-content {
          display: grid;
          grid-template-columns: 1fr 1fr;
@@ -639,10 +639,9 @@
 
          /* +++ ASIDE ++++ */
          aside {
-             height: auto;
              border-radius: 17px;
              grid-area: aside;
-             padding: 30px;
+             padding-bottom: 30px;
          }
 
          .cards-aside-content {
@@ -666,17 +665,19 @@
          }
 
          .cards-activity-content {
+             padding-left: 10px;
              /* display: grid; */
              /* grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%; */
              grid-template-columns: 1fr repeat(4, 1fr) 1fr ;
              grid-template-rows: 195px 45px 45px 170px;
              grid-column-gap: 10px;
+             justify-items: center;
              
          }
 
          .port img,
          .calanques img {
-             height: 305px;
+             height: 390px;
          }
 
          .port {
