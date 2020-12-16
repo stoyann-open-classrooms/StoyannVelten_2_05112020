@@ -38,10 +38,10 @@
 
  .logo {
      height: 55px;
-     margin: 20px 0 20px 5%;
+     margin: 3.5%  0 20px 5%;
  }
 
- .navbar-container {
+ .navbar {
      display: flex;
      justify-content: flex-end;
      width: 100%;
@@ -50,7 +50,7 @@
      flex-wrap: wrap-reverse;
  }
 
- .hebergement-link {
+ .navbar__link{
      width: 50%;
      text-align: center;
      border-bottom: solid 3px #0065fc;
@@ -83,6 +83,7 @@
 
  .titre_principal {
      font-size: 1.3rem;
+     line-height: 1.3em;
      margin-bottom: 10px;
  }
 
@@ -299,6 +300,7 @@
  /* +++ ASIDE ++++ */
  aside {
      background-color: #f2f2f2;
+     padding-bottom: 40px;
  }
 
  .aside_title {
@@ -311,6 +313,7 @@
 
  .aside_title h2 {
      margin-top: 40px;
+     font-size: 1.3rem;
  }
 
  .aside_title i {
@@ -322,9 +325,11 @@
  }
 
  .cards-aside-content {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
+    display: grid;
+    grid-template: 3.5% 1fr 3.5% ;
+    grid-row-gap: 10px;
+    justify-items: center;
+
  }
 
  .cards-aside {
@@ -332,7 +337,7 @@
      justify-content: center;
      background-color: white;
      max-width: 345px;
-     margin: 0 5% 30px 5%;
+     height: 150px;
      border-radius: 17px;
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
@@ -350,8 +355,8 @@
 
  .aside-thumb {
      object-fit: cover;
-     height: 115px;
-     width: 128px;
+     height: 150px;
+     width: 150px;
      padding: 5px;
      border-radius: 17px 0px 0px 17px;
  }
@@ -362,22 +367,23 @@
 
  /* +++ MAIN HEBERGEMENTS ++++ */
  .hebergement_title {
-     margin: 20px 0 25px 3%;
+     font-size: 1.3rem;
+     margin: 30px 0 30px 20px;
  }
 
  /* cards hebergement */
  .hebergement-cards-content {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
+    display: grid;
+    grid-template: 3.5% 1fr 3.5% ;
+    grid-row-gap: 10px;
+    justify-items: center;
 
  }
 
  .hebergement_cards {
      background-color: white;
-     max-width: 335px;
+     max-width: 345px;
      border-radius: 17px;
-     margin-bottom: 30px;
      box-shadow: 1px 1px 15px rgb(111, 111, 111);
      transition: 0.3s;
  }
@@ -401,9 +407,9 @@
 
  .moore {
      position: relative;
-     top: 6px;
-     font-weight: bold;
-     margin-left: 30px;
+     top: 30px;
+     font-weight: bolder;
+     margin-left: 20px;
      margin-bottom: 25px;
      transition: color 0.5s;
  }
@@ -411,6 +417,13 @@
  /* +++ ACTIVITE ++++ */
  #activity {
      margin-top: 60px;
+     padding-bottom: 50px;
+ }
+ .cards-activity-content{
+    display: grid;
+    grid-template: 3.5% 1fr 3.5% ;
+    grid-row-gap: 10px;
+    justify-items: center;
  }
 
  .activite__title {
@@ -420,12 +433,9 @@
 
  .activite__cards {
      background-color: white;
-     max-width: 335px;
+     max-width: 345px;
      height: auto;
-     margin-left: auto;
-     margin-right: auto;
      border-radius: 17px;
-     margin-bottom: 20px;
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
  }
@@ -465,15 +475,33 @@
  /* +++ POUR LES TABLETTES ++++ */
  @media only screen and (min-width: 768px) {
      .cards-activity-content {
-         display: flex;
-         justify-content: center;
-         flex-wrap: wrap;
-         margin: 0 0.5% 0 1.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-row-gap: 10px;
+     }
+     .cards-aside-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+
+     }
+     .hebergement-cards-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-row-gap: 10px;
+        
      }
      
-     .hebergement_cards {
-         margin: 20px;
-     }
+     
+     
+     
+     .footer_body {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 3.5% 0 3.5%;
+    
+    }
 
      /* +++ VERSION DESKTOP ++++ */
      @media only screen and (min-width: 992px) {
@@ -499,13 +527,13 @@
              margin: 0 0 0 5%;
          }
 
-         .navbar-container {
+         .navbar{
              flex-wrap: nowrap;
              position: relative;
              top: -109px;
          }
 
-         .hebergement-link {
+         .navbar__link {
              width: 150px;
              border-bottom: none;
              border-top: solid 3px #0065fc;
@@ -613,6 +641,12 @@
              grid-area: aside;
              margin-left: auto;
          }
+         
+         
+         
+         
+         
+         
 
          .cards-aside {
              min-width: 290px;
@@ -666,10 +700,10 @@
              padding: 45px 0 50px 0;
          }
 
-         .footer_body {
-             display: flex;
-             margin-left: 5%;
-         }
+         /* .footer_body { */
+             /* display: flex; */
+             /* margin-left:  */
+         /* } */
 
          .listb,
          .listc {
