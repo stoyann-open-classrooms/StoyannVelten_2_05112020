@@ -679,6 +679,10 @@
          .calanques img {
              height: 390px;
          }
+         .parc img ,
+         .fort img{
+             height: 192px;
+         }
 
          .port {
              grid-area: 1/1/1/3;
