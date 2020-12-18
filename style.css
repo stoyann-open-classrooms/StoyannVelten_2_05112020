@@ -744,7 +744,7 @@
          display: flex;
          justify-content: flex-start;
          max-width: 1200px;
-         margin: none;
+         margin: auto;
      }
 
      .list--margin {
