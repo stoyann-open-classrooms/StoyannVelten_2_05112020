@@ -275,7 +275,9 @@
      font-size: 0.8rem;
      font-weight: 400;
  }
-
+ .prix-aside{
+     margin-top: 10px;
+ }
  /* +++ NOTES DES CARDS ++++ */
  .fas {
      font-size: 0.7rem;
@@ -351,7 +353,7 @@
 
  .note-aside {
      position: absolute;
-     top: 70px;
+     top: 103px;
  }
 
  .aside-thumb {
@@ -683,7 +685,7 @@
          }
 
          .port {
-             grid-area: 1/1/1/3;
+             grid-area: 1/1/6/3;
          }
 
          .fort {
@@ -691,7 +693,7 @@
          }
 
          .frioul {
-             grid-area: 4/3/3/5;
+             grid-area: 4/3/6/5;
          }
 
          .calanques {
@@ -703,7 +705,7 @@
          }
 
          .parc {
-             grid-area: 2/8/5/8;
+             grid-area: 2/8/6/8;
          }
 
          /* +++ FOOTER++++ */
