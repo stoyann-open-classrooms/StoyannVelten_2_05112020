@@ -504,17 +504,17 @@
 
 
 
-     .footer_body {
-         display: flex;
-         justify-content: flex-start;
-         margin: 0 3.5% 0 3.5%;
+     /* .footer_body { */
+         /* display: flex; */
+         /* justify-content: flex-start; */
+         /* margin: 0 3.5% 0 3.5%; */
 
-     }
+     /* } */
 
-     .listb,
-     .listc {
-         margin-left: 50px;
-     }
+     /* .listb, */
+     /* .listc { */
+         /* margin-left: 50px; */
+     /* } */
  }
 
  /* +++ VERSION DESKTOP ++++ */
@@ -743,7 +743,7 @@
 
      .listb,
      .listc {
-         margin-left: 280px;
+         margin-left: 50px;
      }
 
  }
