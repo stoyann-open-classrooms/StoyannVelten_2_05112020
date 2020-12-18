@@ -554,7 +554,7 @@
      .navbar__link {
          width: 150px;
          border-bottom: none;
-         border-top: solid 3px #bd3715;
+         border-top: solid 3px #0065fc;
          padding-top: 40px;
      }
 
@@ -692,7 +692,7 @@
 
      .parc img,
      .fort img {
-         height: 251px;
+         height:251px;
      }
 
      .port {
@@ -728,20 +728,18 @@
      }
 .footer_body{
     display: flex;
+    justify-content: flex-start;
+
 }
      .listb,
      .listc {
-         margin-left: auto;
+         /* margin-left: auto; */
      }
  }
 
  @media only screen and (min-width: 1920px) {
      .footer_body {
      max-width: 1920px;
-
-         justify-content: flex-start;
-         margin-left: 439px;
-
 
      }
 
