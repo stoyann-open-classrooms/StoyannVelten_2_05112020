@@ -688,12 +688,14 @@
 
      .port img,
      .calanques img {
-         height: 482px;
+         height:531px;
      }
 
-     .parc img,
-     .fort img {
+     .parc img{
          height:251px;
+     }
+     .fort img {
+         height: 201px;
      }
 
      .port {
@@ -701,13 +703,15 @@
      }
 
      .fort {
-         grid-area: 1/3/4/5;
+         grid-area: 1/3/3/5;
      }
 
      .frioul {
-         grid-area: 4/3/6/5;
+         grid-area: 3/3/6/5;
      }
-
+.frioul img{
+    height: 250px;
+}
      .calanques {
          grid-area: 1/5/6/8;
      }
@@ -717,7 +721,9 @@
      }
  
  
- 
+ .dame img{
+     height: 201px;
+ }
      .parc {
          grid-area: 3/8/6/8;
      }
