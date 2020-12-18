@@ -36,7 +36,7 @@
      font-weight: 500;
  }
 
- .logo { 
+ .logo {
      height: 55px;
      margin: 3.5% 0 20px 5%;
  }
@@ -47,7 +47,7 @@
      width: 100%;
      position: relative;
      flex-wrap: wrap-reverse;
-    
+
  }
 
  .navbar__link {
@@ -67,7 +67,7 @@
      padding-bottom: 10px;
      position: relative;
      transition: color 0.5s;
-   
+
  }
 
  .suscrib-link {
@@ -333,7 +333,6 @@
 
  .cards-aside-content {
      display: grid;
-     /* grid-template: 1fr; */
      grid-row-gap: 10px;
      justify-items: center;
 
@@ -460,6 +459,7 @@
 
  /* +++ FOOTER ++++ */
  .footer_body {
+    max-width: 1920px;
      margin-left: 3%;
  }
 
@@ -501,21 +501,21 @@
      }
 
 
-.footer_body{
-    align-content: flex-start;
-}
+     .footer_body {
+         align-content: flex-start;
+     }
 
-   
-   
-   
-   
 
-   
 
-   
-   
-   
-   
+
+
+
+
+
+
+
+
+
  }
 
  /* +++ VERSION DESKTOP ++++ */
@@ -548,8 +548,8 @@
 
      .navbar {
          flex-wrap: nowrap;
-         position: relative;
-         top: -110px;
+         /* position: relative; */
+         top: -124px;
      }
 
      .navbar__link {
@@ -688,12 +688,13 @@
 
      .port img,
      .calanques img {
-         height:532px;
+         height: 532px;
      }
 
-     .parc img{
-         height:251px;
+     .parc img {
+         height: 251px;
      }
+
      .fort img {
          height: 201px;
      }
@@ -709,9 +710,11 @@
      .frioul {
          grid-area: 3/3/6/5;
      }
-.frioul img{
-    height: 250px;
-}
+
+     .frioul img {
+         height: 250px;
+     }
+
      .calanques {
          grid-area: 1/5/6/8;
      }
@@ -719,11 +722,12 @@
      .dame {
          grid-area: 1/8/3/8;
      }
- 
- 
- .dame img{
-     height: 201px;
- }
+
+
+     .dame img {
+         height: 201px;
+     }
+
      .parc {
          grid-area: 3/8/6/8;
      }
@@ -735,26 +739,29 @@
          margin-top: 50px;
          padding: 45px 0 50px 0;
      }
-.footer_body{
-    display: flex;
-    justify-content: flex-start;
-    max-width: 1200px;
-margin: auto;
-padding-left: 5%;
-}
-.list--margin{
-   margin-left: 300px;
-   margin-right: 100px;
-}
- 
+
+     .footer_body {
+         display: flex;
+         justify-content: flex-start;
+         max-width: 1200px;
+         margin: none;
+     }
+
+     .list--margin {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+       
+     }
 
 
- 
+
+
  }
 
  @media only screen and (min-width: 1920px) {
      .footer_body {
-     max-width: 1920px;
+         /* max-width: 1920px; */
 
      }
 
