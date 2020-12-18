@@ -440,7 +440,6 @@
  .activite__cards {
      background-color: white;
      max-width: 345px;
-     /* height: auto; */
      border-radius: 17px;
      box-shadow: 1px 1px 15px darkgrey;
      transition: 0.3s;
@@ -502,19 +501,21 @@
      }
 
 
+.footer_body{
+    align-content: flex-start;
+}
 
+   
+   
+   
+   
 
-     /* .footer_body { */
-         /* display: flex; */
-         /* justify-content: flex-start; */
-         /* margin: 0 3.5% 0 3.5%; */
+   
 
-     /* } */
-
-     /* .listb, */
-     /* .listc { */
-         /* margin-left: 50px; */
-     /* } */
+   
+   
+   
+   
  }
 
  /* +++ VERSION DESKTOP ++++ */
@@ -712,11 +713,13 @@
      }
 
      .dame {
-         grid-area: 1/8/2/8;
+         grid-area: 1/8/3/8;
      }
-
+ 
+ 
+ 
      .parc {
-         grid-area: 2/8/6/8;
+         grid-area: 3/8/6/8;
      }
 
      /* +++ FOOTER++++ */
@@ -729,23 +732,24 @@
 .footer_body{
     display: flex;
     justify-content: flex-start;
-
+    max-width: 1200px;
+margin: auto;
+padding-left: 5%;
 }
-     .listb,
-     .listc {
-         /* margin-left: auto; */
-     }
+.list--margin{
+   margin-left: 300px;
+   margin-right: 100px;
+}
+ 
+
+
+ 
  }
 
  @media only screen and (min-width: 1920px) {
      .footer_body {
      max-width: 1920px;
 
-     }
-
-     .listb,
-     .listc {
-         margin-left: 50px;
      }
 
  }
