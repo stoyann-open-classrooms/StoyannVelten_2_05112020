@@ -459,8 +459,10 @@
 
  /* +++ FOOTER ++++ */
  .footer_body {
-    max-width: 1920px;
-     margin-left: 3%;
+    max-width: 1853px;
+   
+   
+    
  }
 
  footer {
@@ -503,18 +505,9 @@
 
      .footer_body {
          align-content: flex-start;
+         
+
      }
-
-
-
-
-
-
-
-
-
-
-
 
  }
 
@@ -530,7 +523,6 @@
              " filter  filter filter filter filter"
              "  . main .  aside . "
              ". activity  activity activity . "
-             " footer footer footer footer footer";
      }
 
      .logo {
@@ -664,13 +656,6 @@
          grid-column-gap: 10px;
      }
 
-
-
-
-
-
-
-
      /* +++ ACTIVITE ++++ */
      #activity {
          grid-area: activity;
@@ -743,8 +728,8 @@
      .footer_body {
          display: flex;
          justify-content: flex-start;
-         max-width: 1200px;
          margin: auto;
+         padding-left: 3%;
      }
 
      .list--margin {
@@ -758,4 +743,14 @@
 
 
  }
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
 
