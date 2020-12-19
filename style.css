@@ -498,6 +498,9 @@
          grid-row-gap: 10px;
 
      }
+     footer {
+         padding-left: 5%;
+     }
      .footer_body {
          align-content: flex-start;
      }
