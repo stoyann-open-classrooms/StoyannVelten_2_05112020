@@ -38,7 +38,7 @@
 
  .logo {
      height: 55px;
-     margin: 3.5% 0 20px 5%;
+     margin: 3.5% 0 20px 3.5%;
  }
 
  .navbar {
@@ -106,7 +106,7 @@
 
  /* +++ RECHERCHE  ++++ */
  .btn-recherche {
-     margin-left: 5%;
+     margin-left: 3.5%;
      margin-right: 5%;
      margin-top: 35px;
      display: flex;
@@ -159,7 +159,7 @@
 
  /* +++ FILTER ++++ */
  .filter-container {
-     margin-left: 5%;
+     margin-left: 3.5%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
@@ -245,7 +245,7 @@
 
  .info-container {
      display: flex;
-     margin: 60px 0 40px 5%;
+     margin: 60px 0 40px 3.5%;
      align-items: center;
  }
 
@@ -520,6 +520,7 @@
          width: 100%;
          display: grid;
          grid-template-columns: 1fr 60% 30px 33% 1fr;
+         grid-template-rows: 1fr 1fr 1fr ;
          grid-template-areas:
              "  header header header header header"
              " search search search search search"
@@ -539,7 +540,7 @@
      }
 
      .titre_container {
-         margin: -30px 0 0 5%;
+         margin: -30px 0 0 3.5%;
      }
 
      .navbar {
@@ -729,7 +730,7 @@
          display: flex;
          justify-content: flex-start;
          margin: auto;
-         padding-left: 3%;
+         padding-left: 3.5%;
      }
 
      .list--margin {
