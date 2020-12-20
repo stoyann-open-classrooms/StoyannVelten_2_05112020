@@ -314,6 +314,7 @@
      align-items: center;
      margin-left: 5%;
      margin-top: 20px;
+     padding-top: 20px;
      margin-bottom: 25px;
      justify-content: space-between;
  }
@@ -373,6 +374,7 @@
  /* +++ MAIN HEBERGEMENTS ++++ */
  .hebergement_title {
      font-size: 1.3rem;
+     padding-top: 20px;
      margin: 20px 0 20px 5%;
  }
 
