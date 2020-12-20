@@ -485,6 +485,7 @@
          grid-template-columns: 1fr 1fr;
          grid-row-gap: 10px;
      }
+
      .cards-aside-content {
          display: grid;
          grid-template-columns: 1fr 1fr;
@@ -492,23 +493,27 @@
          grid-column-gap: 10px;
 
      }
+
      .hebergement-cards-content {
          display: grid;
          grid-template-columns: 1fr 1fr;
          grid-row-gap: 10px;
 
      }
+
      footer {
          /* padding-left: 5%; */
      }
+
      .footer_body {
          align-content: flex-start;
      }
-     
-     
-     
+
+
+
 
  }
+
  /* +++ VERSION DESKTOP ++++ */
  @media only screen and (min-width: 992px) {
      .site-content {
@@ -524,7 +529,7 @@
      }
 
      .logo {
-         height: 50px;
+         height: 70px;
      }
 
      /* +++ HEADER++++ */
@@ -727,8 +732,8 @@
      }
 
      .list--margin {
-       margin: 0 20%;
-       
+         margin: 0 20%;
+
      }
 
  }
