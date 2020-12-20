@@ -499,11 +499,14 @@
 
      }
      footer {
-         padding-left: 5%;
+         /* padding-left: 5%; */
      }
      .footer_body {
          align-content: flex-start;
      }
+     
+     
+     
 
  }
  /* +++ VERSION DESKTOP ++++ */
@@ -724,8 +727,8 @@
      }
 
      .list--margin {
-         margin-left: 150px;
-         margin-right: 200px;
+       margin: 0 20%;
+       
      }
 
  }
