@@ -224,7 +224,7 @@
      border: solid 1px #deebff;
      border-radius: 20px;
      padding-left: 56px;
-     font-weight: bold;
+     font-weight: bolder;
  }
 
  .eco input {
@@ -622,8 +622,6 @@
          border-radius: 17px;
          grid-area: main;
          width: 100%;
-         padding: 20px;
-         margin-left: 15px;
      }
 
      .hebergement-cards-content {
