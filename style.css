@@ -38,7 +38,7 @@
 
  .logo {
      height: 55px;
-     margin: 3.5% 0 20px 3.5%;
+     margin: 3.5% 0 20px 5%;
  }
 
  .navbar {
@@ -159,7 +159,7 @@
 
  /* +++ FILTER ++++ */
  .filter-container {
-     margin-left: 3.5%;
+     margin-left: 5%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
@@ -245,7 +245,7 @@
 
  .info-container {
      display: flex;
-     margin: 60px 0 40px 3.5%;
+     margin: 60px 0 40px 5%;
      align-items: center;
  }
 
@@ -312,7 +312,7 @@
  .aside_title {
      display: flex;
      align-items: center;
-     margin-left: 6%;
+     margin-left: 5%;
      margin-bottom: 25px;
      justify-content: space-between;
  }
@@ -373,7 +373,7 @@
  /* +++ MAIN HEBERGEMENTS ++++ */
  .hebergement_title {
      font-size: 1.3rem;
-     margin: 20px 0 20px 20px;
+     margin: 20px 0 20px 5%;
  }
 
  /* cards hebergement */
@@ -431,7 +431,8 @@
  }
 
  .activite__title {
-     margin-left: 4%;
+     font-size: 1.3rem;
+     margin-left: 5%;
      margin-bottom: 30px;
  }
 
@@ -466,16 +467,18 @@
 
  footer {
      background-color: #f2f2f2;
-     padding: 30px;
+     padding: 5%;
  }
 
  .list-element {
      margin-top: 30px;
      margin-bottom: 30px;
+     font-weight: 800;
  }
 
  .list-element a {
      transition: color 0.5s;
+     font-weight: 500;
  }
 
  /* +++ POUR LES TABLETTES ++++ */
@@ -532,6 +535,7 @@
      .logo {
          margin-top: 32px;
          height: 70px;
+         margin-left: 3.5%;
      }
 
      /* +++ HEADER++++ */
@@ -582,7 +586,9 @@
          margin-top: 20px;
          margin-bottom: 20px;
      }
-
+     .btn-recherche{
+         margin-left: 3.5%;
+     }
      .btn-recherche__input__submit {
          visibility: visible;
          position: absolute;
@@ -606,6 +612,8 @@
 
      .filter-container {
          display: flex;
+         margin-left: 3.5%;
+       
      }
 
      .filter-title {
@@ -613,6 +621,9 @@
          margin: 0;
          padding-top: 50px;
          margin-right: 40px;
+     }
+     .info-container{
+         margin-left: 3.5%;
      }
 
      /* +++ HEBERGEMENT++++ */
@@ -623,7 +634,9 @@
          grid-area: main;
          width: 100%;
      }
-
+     .hebergement_title{
+         margin-left: 1.2%;
+     }
      .hebergement-cards-content {
          display: grid;
          grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -640,6 +653,7 @@
      .moore {
          padding-top: 20px;
          padding-bottom: 20px;
+         margin-left: 1.5%;
      }
 
      /* +++ ASIDE ++++ */
@@ -648,6 +662,9 @@
          grid-area: aside;
          padding-bottom: 30px;
      }
+    .aside-title{
+        margin-left: 3.5%;
+    }
 
      .cards-aside-content {
          display: grid;
@@ -660,7 +677,9 @@
      #activity {
          grid-area: activity;
      }
-
+.activite__title{
+    margin-left: 1%;
+}
      .cards-activity-content {
          grid-template-columns: 1fr repeat(4, 1fr) 1fr;
          grid-template-rows: 195px 45px 45px 170px;
@@ -728,7 +747,7 @@
          display: flex;
          justify-content: flex-start;
          margin: auto;
-         padding-left: 3.5%;
+         padding-left: 1.5%;
      }
 
      .list--margin {
