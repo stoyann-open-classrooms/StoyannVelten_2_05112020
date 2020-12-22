@@ -124,7 +124,7 @@
 
  .pin-icone i {
      margin: auto;
-     color: black;
+     color: rgb(0, 0, 0);
      font-size: large;
  }
 
@@ -523,7 +523,6 @@
          width: 100%;
          display: grid;
          grid-template-columns: 1fr 60% 30px 33% 1fr;
-         grid-template-rows: 1fr 1fr 1fr ;
          grid-template-areas:
              "  header header header header header"
              " search search search search search"
