@@ -689,7 +689,9 @@
          justify-items: center;
 
      }
-
+.activite__cards{
+    margin: 0;
+}
      .port img,
      .calanques img {
          height: 532px;
@@ -758,4 +760,4 @@
 
  }
 
- }
+ 
